@@ -1,0 +1,142 @@
+/*.el-menu-demo{*/
+  /*width: 400px;*/
+/*}*/
+.parent .el-container{
+  height: 95%;
+}
+.navigation-right{
+  width: 230px;
+}
+
+.car .el-col-12,.car1 .el-col-12{
+  width: 276px !important;
+}
+
+/*.bar .el-button{*/
+  /*width: 74px !important;*/
+  /*height: 40px !important;*/
+  /*margin-left: 84px !important;*/
+/*}*/
+.homepage-center-bottom .el-button{
+  width: 50px !important;
+  background-color: white;
+  border: none;
+  color: #32b5c5;
+}
+.homepage-center .el-button{
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  color: #32b5c5;
+  outline: none !important;
+}
+.homepage-center .cell{
+  font-size: 12px;
+}
+.theNewRole .el-dialog{
+  height: 500px;
+}
+.theNewRole .el-dialog__footer{
+  margin-top: -6%;
+}
+.fir .el-input{
+  width: 220px;
+}
+.four .el-radio__label{
+  color: #333333 !important;
+}
+
+.selectpersonnel .el-dialog__body{
+  padding: 0 20px;
+  margin-top: 36px;
+}
+.selectpersonnel .el-button{
+  margin-top: 60px;
+}
+.box .el-input--suffix{
+  width: 412px;
+}
+/*移动角色组css*/
+.role .el-input{
+  width: 300px !important;
+}
+.role .el-dialog__body{
+  padding: 0 25px;
+}
+.role .el-dialog__footer{
+  margin-top: 60px;
+}
+/*删除角色组*/
+.deleteRole .el-dialog__body{
+  padding: 0 25px;
+}
+.deleteRole .el-icon-warning{
+  color: #f1b169;
+}
+/*权限管理界面jurisdiction*/
+.hea-center .el-button{
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  color: #32b5c5;
+  outline: none !important;
+}
+.selectpersonnel-hao .affirm .el-button{
+margin-top: 130px;
+}
+.center .el-col-3{
+  text-align: right;
+}
+.center .el-col-8{
+  text-align: right;
+}
+/*角色管理界面代码*/
+.bar1 .el-input{
+  width: 180px;
+}
+.hea-top .el-col-2{
+  text-align: right;
+}
+.hea-top span{
+  font-size: 12px;
+}
+.hea-center .cell{
+  font-size: 12px;
+}
+/*编辑员工页面带返回按钮的*/
+.head-center span{
+  font-size: 12px;
+}
+.head-center .el-input__inner{
+  width: 300px !important;
+}
+.head-center .bg-purple{
+  text-align: right;
+}
+.head-bom .el-input--suffix{
+  width: 307px;
+}
+/*批量导入人员*/
+.upload-demo{
+  margin-left: 20% !important;
+}
+.wrap-top .el-input--suffix{
+  width: 480px;
+}
+.aassssa{
+  color: #32b5c5;
+}
+
+/*去a标签*/
+/*.router-link-active {*/
+  /*text-decoration: none;*/
+/*}*/
+/*a {*/
+  /*text-decoraction: none;*/
+/*}*/
+.router-link-active {
+  text-decoration: none !important;
+}
+a {
+  text-decoraction: none !important;
+}

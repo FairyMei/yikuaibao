@@ -1,0 +1,21 @@
+/*.headers .el-tabs{ height: 70px; line-height: 70px;}*/
+.headers .el-tabs__content{ clear: both}
+.fast_contetn .el-dialog .el-dialog__body{ padding-left: 0px !important;padding-right: 0px !important; }
+/*孙国盛代码*/
+.input1 .el-input,.input1 .el-autocomplete-suggestion__wrap{
+  width: 130px !important;
+}
+.input1 .el-col{
+  text-align: right;
+}
+.input3 .el-input__inner{
+  width: 80%;
+}
+.input4 .grid-content{
+  text-align: right;
+}
+/*查看详情弹框的样式*/
+.dalog .el-input{
+  width: 30%;
+}
+/*孙国盛代码*/

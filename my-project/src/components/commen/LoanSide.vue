@@ -1,0 +1,668 @@
+<template>
+    <div>
+
+      <div id="modal" ref="mdl">
+        <div id='right'></div>
+        <div id = 'left'>
+          <div id="body">
+            <div id="header" >
+              <div>
+              </div>
+              <p>借款单详情</p>
+              <button @click="close" class="btn" style="">关闭</button>
+            </div>
+            <div id="body-content">
+
+
+
+              <div class="right_part_header___y19fn">
+                <div class="title___3t8dP">1</div>
+                <div class="subtitle___-iScM">
+                  <div class="template_type___2GSEH">借款单</div>
+                  <div class="bill_id___2og4I">S18000001</div>
+                  <div class="owner_name___pwKtG">郭美杰</div>
+                </div>
+                <div class="status_wrapper___2AdjT status___2_bB3">
+                  <span class="status_wrapper_point___z3wCd color_approving___2Zzjy" style=" display: inline-block; background: rgb(161, 220, 99);"></span>
+                  <span class="status_wrapper_text___3654i">已完成</span>
+                </div>
+              </div>
+              <div class="tabsConent">
+                <el-tabs v-model="activeName2" type="card" @tab-click="handleClickTab" style="height: 30px; line-height: 30px;">
+                  <el-tab-pane label="单据详情" name="first">
+                    <div class="ekb-tab-content" style="width: 100%; height: 500px; padding-left: 15px; overflow-y: auto;">
+                      <div >
+                        <div class="logs-card___3MDK9"><div class="wrapper">
+                          <div class="line-1"><div class="labebank-tipsl">
+                            <span class="circle-icon" style="background: rgb(161, 220, 99);"></span>
+                            <span style="color: rgb(58, 63, 63);" class="status_wrapper_text___3654i">已完成</span>
+                          </div>
+                          </div>
+                          <div class="pl-10">
+                            <div class="horizontal___2FyAy">
+                              <span class="date___3PIk0">昨天 21:25</span>
+                              <div class="approve-content-wrapper___RXwWz">
+                      <span>
+                        <mark class="content-highlight___2yDV4 ">郭美杰</mark>
+                        <span class=""> 完成了支付</span>
+                      </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="">
+                          <div class="ant-row form_item_4_readonly_wrapper___2VbXb">
+                            <div class="ant-col-4 form_item__label___Gd5r6">标题：</div>
+                            <div class="ant-col-15 form_item__content___2GGuS">
+                              <!--<div class="label_wrap___3v18Q">-->
+                              <p class="new-line">1</p>
+                              <!--</div>-->
+                            </div>
+                          </div>
+                          <div class="ant-row form_item_4_readonly_wrapper___2VbXb">
+                            <div class="ant-col-4 form_item__label___Gd5r6">提交人：</div>
+                            <div class="ant-col-15 form_item__content___2GGuS">
+                              <div class="horizontal">
+                                <span>郭美杰</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ant-row form_item_4_readonly_wrapper___2VbXb">
+                            <div class="ant-col-4 form_item__label___Gd5r6">申请日期：
+                            </div>
+                            <div class="ant-col-15 form_item__content___2GGuS">
+                              <span>2018/08/20</span>
+                            </div>
+                          </div>
+                          <div style="border-top: 1px solid rgba(0, 0, 0, 0.08); padding-bottom: 16px;"></div>
+
+                          <div class="ant-row form_item_4_readonly_wrapper___2VbXb">
+                            <div class="ant-col-4 form_item__label___Gd5r6">借款金额：</div>
+                            <div class="ant-col-15 form_item__content___2GGuS">
+                              <!--<div class="label_wrap___3v18Q">-->
+                              <p class="new-line">1</p>
+                              <!--</div>-->
+                            </div>
+                          </div>
+                          <div class="ant-row form_item_4_readonly_wrapper___2VbXb">
+                            <div class="ant-col-4 form_item__label___Gd5r6">借款日期：</div>
+                            <div class="ant-col-15 form_item__content___2GGuS">
+                              <div class="horizontal">
+                                <span>郭美杰</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ant-row form_item_4_readonly_wrapper___2VbXb">
+                            <div class="ant-col-4 form_item__label___Gd5r6">还款日期：
+                            </div>
+                            <div class="ant-col-15 form_item__content___2GGuS">
+                              <span>2018/08/20</span>
+                            </div>
+                          </div>
+                          <div style="border-top: 1px solid rgba(0, 0, 0, 0.08); padding-bottom: 16px;"></div>
+                        </div>
+                        <div>
+                          <div class="trips___1hDiv">
+                            <h3>收款信息</h3>
+
+                            <ul style="border: 1px solid #e6e6e6;position: relative">
+                              <li class="repeat">
+
+
+                                <div class="card-left-wrapper">
+                                  <div class="title-line-style">
+                  <span class="title-line-text fs-14 color-gray-9 mr-8">
+
+                      d
+
+                  </span>
+                                    <div class="account-type-wrapper account-type-blue-border mr-8">
+                                      <span class="fs-11 color-blue">个人账户</span>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="account-number-line-style">
+                  <span class="account-number-style color-gray-9">
+
+                     1245　5555　555
+
+                  </span>
+                                  </div>
+
+                                  <div class="account-adr-line-style">
+                                    <div class="bank-icon-wrapper mr-5">
+                                      <img src="http://images.ekuaibao.com/bank/bank-other.svg" width="20" height="20">
+                                    </div>
+                                    <div class="fs-12 color-gray-8 flex-s-0">国家开发银行</div>
+                                    <span class="segment-line-vertical"></span>
+                                    <div class="bank-info-style">国家开发银行天津市分行
+                                    </div>
+                                  </div>
+
+                                </div>
+
+
+                                <div class="card-right-wrapper">
+                                  <div class="op-wrapper"></div>
+                                  <div class="owner-line">
+                                    <span class="owner-text">所有者：</span>
+                                    <span class="owner-text">
+                    郭美杰
+                  </span>
+
+                                  </div>
+                                </div>
+
+                              </li>
+                            </ul>
+                          </div>
+
+
+                        </div>
+
+
+                        <div>
+
+                        </div>
+                        <div class="bottom-line___20mVx"><div>
+
+                        </div>
+                          <div class="bottom-line-content">
+                            <div>
+
+                            </div>
+                            <div class="amount-wrapper"></div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                    <div class="button-bottom" style="border-top: 1px solid rgba(0, 0, 0, 0.08); ">
+
+                      <el-button plain >打印</el-button>
+
+                    </div>
+                  </el-tab-pane>
+
+                  <el-tab-pane label="审批流程" name="second">
+                    <div class="spLiucheng ekb-tab-content" style="width: 100%; height: 500px; padding-left: 15px; overflow-y: scroll;">
+
+                      <div class="spLiuchengTop">
+                        <div class="spLiuchengTop-img">
+
+                          <div class="user-pic">
+                            <img width="48" height="48" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOS4xICgzMTcyMCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+5aS05YOPPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGNpcmNsZSBpZD0icGF0aC0xIiBjeD0iMjQiIGN5PSIyNCIgcj0iMjQiPjwvY2lyY2xlPgogICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIG1hc2tDb250ZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXNrVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4PSIwIiB5PSIwIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICA8L21hc2s+CiAgICAgICAgPG1hc2sgaWQ9Im1hc2stNCIgbWFza0NvbnRlbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hc2tVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHg9IjAiIHk9IjAiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8cGF0aCBkPSJNNDAsMzkuMDU4NDQ4OSBMNDAsMzkuMDY0OTc4MSBDNDAsNDAuMTMyNjcwNCAzOS4xNjAyMzk4LDQwLjk5ODQ0OTIgMzguMTI0OTk2OSw0MC45OTg0NDkyIEwxLjg3NTAwMzA3LDQwLjk5ODQ0OTIgQzAuODM5OTA3NTExLDQwLjk5ODQ0OTIgMCw0MC4xMzI2NzA0IDAsMzkuMDY0OTc4MSBMMCwzOS4wNTg0NDg5IEMwLDM5LjA1ODQ0ODkgMCwzMi4wMDYwMDQ0IDQuOTkwMjU1MzMsMjkuNDQwOTIxMyBDOC4xNTEwMTU0NiwyNy44MTk3NzA3IDYuOTMzNTkzODUsMjkuMTM4MTczNiAxMC44MTM3OTA4LDI3LjQ3NDcwNjEgQzE0LjY5MDc0NzcsMjUuODE3ODE2OCAxNS42MDg3NTk5LDI1LjIzODQzODIgMTUuNjA4NzU5OSwyNS4yMzg0MzgyIEwxNS42NDQ1NDc2LDIxLjQxNjcwOTMgQzE1LjY0NDU0NzYsMjEuNDE2NzA5MyAxNC4xOTI3MTM4LDIwLjI3MDk2MTQgMTMuNzQzNTI2MSwxNi42NzM5MjQ1IEMxMi44MzIwOTIxLDE2Ljk0NzM2NDUgMTIuNTMyNTg0NSwxNS41NzM2MzU0IDEyLjQ4MDQ5ODQsMTQuNjk3OTg5MiBDMTIuNDMxNjUyMywxMy44NTQ4OTA4IDExLjk1MzE1NjgsMTEuMjE4MTgzIDEzLjA2MzIxNTIsMTEuNDU1ODM1MyBDMTIuODM1MzgxMyw5LjY5NjM5Mzc1IDEyLjY3MjU0NDYsOC4xMDc4Mzk5NCAxMi43NTM5Mzg0LDcuMjY2MzYxNSBDMTMuMDMwNjE4NCw0LjMxMzk0NTk1IDE1Ljc4NDUwNzcsMS4yMjk1NzIyOCAyMC4wMjk0MDU4LDEuMDAzMzU4MzcgQzI1LjAxOTYxMjEsMS4yMjc5NTIyNiAyNi45OTg3ODc0LDQuMzEyMzI1OTIgMjcuMjc1NDE4NCw3LjI2NDc5MDU3IEMyNy4zNTY4MTIyLDguMTA2MjE5OTIgMjcuMTc3NzI2Miw5LjY5NDc3MzczIDI2Ljk0OTg5MjIsMTEuNDUyNTk1MiBDMjguMDU5OTAxNSwxMS4yMTY2MTIxIDI3LjU3ODExNjksMTMuODQ4NDEwNyAyNy41MjYwMzA4LDE0LjY5NDc5ODMgQzI3LjQ3Mzk5MzcsMTUuNTY3MjA0NCAyNy4xNjgwMDYsMTYuOTM3NjkzNSAyNi4yNjMxMDEzLDE2LjY2NDIwNDQgQzI1LjgwNzI4NjIsMjAuMjYxMTkyMiAyNC4zNTU1MDE0LDIxLjQwMDU1ODIgMjQuMzU1NTAxNCwyMS40MDA1NTgyIEwyNC4zOTEyODkyLDI1LjIwMjYwMTQgQzI0LjM5MTI4OTIsMjUuMjAyNjAxNCAyNS4zMDkyNTIzLDI1Ljc0MzAwMTMgMjkuMTg2MzA3NCwyNy4zOTk5Mzk2IEMzMy4wNjY1MDQzLDI5LjA2MDA2ODkgMzEuODQ4OTg0NSwyNy44MTk3NzA3IDM1LjAwOTg0MjksMjkuNDQwOTIxMyBDNDAsMzIuMDA1OTU1MyA0MCwzOS4wNTg0NDg5IDQwLDM5LjA1ODQ0ODkiIGlkPSJwYXRoLTUiPjwvcGF0aD4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLlrqHmibnmtYHnqIsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NTcuMDAwMDAwLCAtMjIzLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0i5oql6ZSA5Y2V6K+m5oOFIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NzAuMDAwMDAwLCA3NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC05Ij4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwLjAwMDAwMCwgMTQ3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTEtQ29weS0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuMDAwMDAwLCAwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTMiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ik1hc2siIHN0cm9rZT0iI0U3RTdFNyIgbWFzaz0idXJsKCNtYXNrLTIpIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiNGM0YzRjMiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dXNlIG1hc2s9InVybCgjbWFzay00KSIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiIG1hc2s9InVybCgjbWFzay0zKSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQuMDAwMDAwLCA4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPG1hc2sgaWQ9Im1hc2stNiIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dXNlIGlkPSJNYXNrIiBzdHJva2U9Im5vbmUiIGZpbGw9IiNFMkUyRTIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==">
+                            <div class="spLiuchengTop-zhuGuan">
+                              主管审批
+                            </div>
+                            <div class="user-name">
+                              郭美杰
+                            </div>
+                            <div class="flow-config-bg" style="width: 50%;left: 50%"></div>
+                          </div>
+
+                          <div class="user-pic">
+                            <img width="48" style="z-index: 1001" height="48" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOS4xICgzMTcyMCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+5aS05YOPPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGNpcmNsZSBpZD0icGF0aC0xIiBjeD0iMjQiIGN5PSIyNCIgcj0iMjQiPjwvY2lyY2xlPgogICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIG1hc2tDb250ZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXNrVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4PSIwIiB5PSIwIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICA8L21hc2s+CiAgICAgICAgPG1hc2sgaWQ9Im1hc2stNCIgbWFza0NvbnRlbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hc2tVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHg9IjAiIHk9IjAiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8cGF0aCBkPSJNNDAsMzkuMDU4NDQ4OSBMNDAsMzkuMDY0OTc4MSBDNDAsNDAuMTMyNjcwNCAzOS4xNjAyMzk4LDQwLjk5ODQ0OTIgMzguMTI0OTk2OSw0MC45OTg0NDkyIEwxLjg3NTAwMzA3LDQwLjk5ODQ0OTIgQzAuODM5OTA3NTExLDQwLjk5ODQ0OTIgMCw0MC4xMzI2NzA0IDAsMzkuMDY0OTc4MSBMMCwzOS4wNTg0NDg5IEMwLDM5LjA1ODQ0ODkgMCwzMi4wMDYwMDQ0IDQuOTkwMjU1MzMsMjkuNDQwOTIxMyBDOC4xNTEwMTU0NiwyNy44MTk3NzA3IDYuOTMzNTkzODUsMjkuMTM4MTczNiAxMC44MTM3OTA4LDI3LjQ3NDcwNjEgQzE0LjY5MDc0NzcsMjUuODE3ODE2OCAxNS42MDg3NTk5LDI1LjIzODQzODIgMTUuNjA4NzU5OSwyNS4yMzg0MzgyIEwxNS42NDQ1NDc2LDIxLjQxNjcwOTMgQzE1LjY0NDU0NzYsMjEuNDE2NzA5MyAxNC4xOTI3MTM4LDIwLjI3MDk2MTQgMTMuNzQzNTI2MSwxNi42NzM5MjQ1IEMxMi44MzIwOTIxLDE2Ljk0NzM2NDUgMTIuNTMyNTg0NSwxNS41NzM2MzU0IDEyLjQ4MDQ5ODQsMTQuNjk3OTg5MiBDMTIuNDMxNjUyMywxMy44NTQ4OTA4IDExLjk1MzE1NjgsMTEuMjE4MTgzIDEzLjA2MzIxNTIsMTEuNDU1ODM1MyBDMTIuODM1MzgxMyw5LjY5NjM5Mzc1IDEyLjY3MjU0NDYsOC4xMDc4Mzk5NCAxMi43NTM5Mzg0LDcuMjY2MzYxNSBDMTMuMDMwNjE4NCw0LjMxMzk0NTk1IDE1Ljc4NDUwNzcsMS4yMjk1NzIyOCAyMC4wMjk0MDU4LDEuMDAzMzU4MzcgQzI1LjAxOTYxMjEsMS4yMjc5NTIyNiAyNi45OTg3ODc0LDQuMzEyMzI1OTIgMjcuMjc1NDE4NCw3LjI2NDc5MDU3IEMyNy4zNTY4MTIyLDguMTA2MjE5OTIgMjcuMTc3NzI2Miw5LjY5NDc3MzczIDI2Ljk0OTg5MjIsMTEuNDUyNTk1MiBDMjguMDU5OTAxNSwxMS4yMTY2MTIxIDI3LjU3ODExNjksMTMuODQ4NDEwNyAyNy41MjYwMzA4LDE0LjY5NDc5ODMgQzI3LjQ3Mzk5MzcsMTUuNTY3MjA0NCAyNy4xNjgwMDYsMTYuOTM3NjkzNSAyNi4yNjMxMDEzLDE2LjY2NDIwNDQgQzI1LjgwNzI4NjIsMjAuMjYxMTkyMiAyNC4zNTU1MDE0LDIxLjQwMDU1ODIgMjQuMzU1NTAxNCwyMS40MDA1NTgyIEwyNC4zOTEyODkyLDI1LjIwMjYwMTQgQzI0LjM5MTI4OTIsMjUuMjAyNjAxNCAyNS4zMDkyNTIzLDI1Ljc0MzAwMTMgMjkuMTg2MzA3NCwyNy4zOTk5Mzk2IEMzMy4wNjY1MDQzLDI5LjA2MDA2ODkgMzEuODQ4OTg0NSwyNy44MTk3NzA3IDM1LjAwOTg0MjksMjkuNDQwOTIxMyBDNDAsMzIuMDA1OTU1MyA0MCwzOS4wNTg0NDg5IDQwLDM5LjA1ODQ0ODkiIGlkPSJwYXRoLTUiPjwvcGF0aD4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLlrqHmibnmtYHnqIsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NTcuMDAwMDAwLCAtMjIzLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0i5oql6ZSA5Y2V6K+m5oOFIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NzAuMDAwMDAwLCA3NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC05Ij4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwLjAwMDAwMCwgMTQ3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTEtQ29weS0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuMDAwMDAwLCAwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTMiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ik1hc2siIHN0cm9rZT0iI0U3RTdFNyIgbWFzaz0idXJsKCNtYXNrLTIpIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiNGM0YzRjMiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dXNlIG1hc2s9InVybCgjbWFzay00KSIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiIG1hc2s9InVybCgjbWFzay0zKSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQuMDAwMDAwLCA4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPG1hc2sgaWQ9Im1hc2stNiIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dXNlIGlkPSJNYXNrIiBzdHJva2U9Im5vbmUiIGZpbGw9IiNFMkUyRTIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==">
+                            <div class="spLiuchengTop-zhuGuan">
+                              主管审批
+                            </div>
+                            <div class="user-name">
+                              郭美杰
+                            </div>
+                            <div class="flow-config-bg"></div>
+                          </div>
+
+                          <div class="user-pic">
+                            <img width="48" height="48" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOS4xICgzMTcyMCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+5aS05YOPPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGNpcmNsZSBpZD0icGF0aC0xIiBjeD0iMjQiIGN5PSIyNCIgcj0iMjQiPjwvY2lyY2xlPgogICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIG1hc2tDb250ZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXNrVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4PSIwIiB5PSIwIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICA8L21hc2s+CiAgICAgICAgPG1hc2sgaWQ9Im1hc2stNCIgbWFza0NvbnRlbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hc2tVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHg9IjAiIHk9IjAiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8cGF0aCBkPSJNNDAsMzkuMDU4NDQ4OSBMNDAsMzkuMDY0OTc4MSBDNDAsNDAuMTMyNjcwNCAzOS4xNjAyMzk4LDQwLjk5ODQ0OTIgMzguMTI0OTk2OSw0MC45OTg0NDkyIEwxLjg3NTAwMzA3LDQwLjk5ODQ0OTIgQzAuODM5OTA3NTExLDQwLjk5ODQ0OTIgMCw0MC4xMzI2NzA0IDAsMzkuMDY0OTc4MSBMMCwzOS4wNTg0NDg5IEMwLDM5LjA1ODQ0ODkgMCwzMi4wMDYwMDQ0IDQuOTkwMjU1MzMsMjkuNDQwOTIxMyBDOC4xNTEwMTU0NiwyNy44MTk3NzA3IDYuOTMzNTkzODUsMjkuMTM4MTczNiAxMC44MTM3OTA4LDI3LjQ3NDcwNjEgQzE0LjY5MDc0NzcsMjUuODE3ODE2OCAxNS42MDg3NTk5LDI1LjIzODQzODIgMTUuNjA4NzU5OSwyNS4yMzg0MzgyIEwxNS42NDQ1NDc2LDIxLjQxNjcwOTMgQzE1LjY0NDU0NzYsMjEuNDE2NzA5MyAxNC4xOTI3MTM4LDIwLjI3MDk2MTQgMTMuNzQzNTI2MSwxNi42NzM5MjQ1IEMxMi44MzIwOTIxLDE2Ljk0NzM2NDUgMTIuNTMyNTg0NSwxNS41NzM2MzU0IDEyLjQ4MDQ5ODQsMTQuNjk3OTg5MiBDMTIuNDMxNjUyMywxMy44NTQ4OTA4IDExLjk1MzE1NjgsMTEuMjE4MTgzIDEzLjA2MzIxNTIsMTEuNDU1ODM1MyBDMTIuODM1MzgxMyw5LjY5NjM5Mzc1IDEyLjY3MjU0NDYsOC4xMDc4Mzk5NCAxMi43NTM5Mzg0LDcuMjY2MzYxNSBDMTMuMDMwNjE4NCw0LjMxMzk0NTk1IDE1Ljc4NDUwNzcsMS4yMjk1NzIyOCAyMC4wMjk0MDU4LDEuMDAzMzU4MzcgQzI1LjAxOTYxMjEsMS4yMjc5NTIyNiAyNi45OTg3ODc0LDQuMzEyMzI1OTIgMjcuMjc1NDE4NCw3LjI2NDc5MDU3IEMyNy4zNTY4MTIyLDguMTA2MjE5OTIgMjcuMTc3NzI2Miw5LjY5NDc3MzczIDI2Ljk0OTg5MjIsMTEuNDUyNTk1MiBDMjguMDU5OTAxNSwxMS4yMTY2MTIxIDI3LjU3ODExNjksMTMuODQ4NDEwNyAyNy41MjYwMzA4LDE0LjY5NDc5ODMgQzI3LjQ3Mzk5MzcsMTUuNTY3MjA0NCAyNy4xNjgwMDYsMTYuOTM3NjkzNSAyNi4yNjMxMDEzLDE2LjY2NDIwNDQgQzI1LjgwNzI4NjIsMjAuMjYxMTkyMiAyNC4zNTU1MDE0LDIxLjQwMDU1ODIgMjQuMzU1NTAxNCwyMS40MDA1NTgyIEwyNC4zOTEyODkyLDI1LjIwMjYwMTQgQzI0LjM5MTI4OTIsMjUuMjAyNjAxNCAyNS4zMDkyNTIzLDI1Ljc0MzAwMTMgMjkuMTg2MzA3NCwyNy4zOTk5Mzk2IEMzMy4wNjY1MDQzLDI5LjA2MDA2ODkgMzEuODQ4OTg0NSwyNy44MTk3NzA3IDM1LjAwOTg0MjksMjkuNDQwOTIxMyBDNDAsMzIuMDA1OTU1MyA0MCwzOS4wNTg0NDg5IDQwLDM5LjA1ODQ0ODkiIGlkPSJwYXRoLTUiPjwvcGF0aD4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLlrqHmibnmtYHnqIsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NTcuMDAwMDAwLCAtMjIzLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0i5oql6ZSA5Y2V6K+m5oOFIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NzAuMDAwMDAwLCA3NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC05Ij4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwLjAwMDAwMCwgMTQ3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTEtQ29weS0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuMDAwMDAwLCAwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTMiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ik1hc2siIHN0cm9rZT0iI0U3RTdFNyIgbWFzaz0idXJsKCNtYXNrLTIpIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiNGM0YzRjMiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dXNlIG1hc2s9InVybCgjbWFzay00KSIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiIG1hc2s9InVybCgjbWFzay0zKSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQuMDAwMDAwLCA4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPG1hc2sgaWQ9Im1hc2stNiIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dXNlIGlkPSJNYXNrIiBzdHJva2U9Im5vbmUiIGZpbGw9IiNFMkUyRTIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==">
+                            <div class="spLiuchengTop-zhuGuan">
+                              主管审批
+                            </div>
+                            <div class="user-name">
+                              郭美杰
+                            </div>
+                            <div class="flow-config-bg"></div>
+                          </div>
+
+                        </div>
+
+
+
+                      </div>
+
+
+                      <div class="spLiuchengBottom">
+
+                        <div class="expense-log">
+
+                          <el-dropdown @command="handleCommand">
+  <span class="el-dropdown-link">
+    全部历史<i class="el-icon-arrow-down el-icon--right"></i>
+  </span>
+                            <el-dropdown-menu slot="dropdown">
+                              <el-dropdown-item command="a">包含评论的历史</el-dropdown-item>
+                              <el-dropdown-item command="b">审批事件的历史</el-dropdown-item>
+                              <el-dropdown-item command="c">全部历史</el-dropdown-item>
+                            </el-dropdown-menu>
+                          </el-dropdown>
+                        </div>
+
+                        <div class="flow-item horizontal">
+                          <div class="mark-circle"></div>
+                          <div class="label-time vertical">
+                            <div style="color: rgb(51, 51, 51);">08.20</div>
+                            <div style="    margin-top: 16px;
+    margin-left: -38px;">21:25</div>
+                          </div>
+                          <div class="flow-desc horizontal">
+                            <div class="horizontal___11Gko mt-5">
+                              <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjQ4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCAzOS4xICgzMTcyMCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+5aS05YOPPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGNpcmNsZSBpZD0icGF0aC0xIiBjeD0iMjQiIGN5PSIyNCIgcj0iMjQiPjwvY2lyY2xlPgogICAgICAgIDxtYXNrIGlkPSJtYXNrLTIiIG1hc2tDb250ZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBtYXNrVW5pdHM9Im9iamVjdEJvdW5kaW5nQm94IiB4PSIwIiB5PSIwIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICA8L21hc2s+CiAgICAgICAgPG1hc2sgaWQ9Im1hc2stNCIgbWFza0NvbnRlbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIG1hc2tVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHg9IjAiIHk9IjAiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNwYXRoLTEiPjwvdXNlPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8cGF0aCBkPSJNNDAsMzkuMDU4NDQ4OSBMNDAsMzkuMDY0OTc4MSBDNDAsNDAuMTMyNjcwNCAzOS4xNjAyMzk4LDQwLjk5ODQ0OTIgMzguMTI0OTk2OSw0MC45OTg0NDkyIEwxLjg3NTAwMzA3LDQwLjk5ODQ0OTIgQzAuODM5OTA3NTExLDQwLjk5ODQ0OTIgMCw0MC4xMzI2NzA0IDAsMzkuMDY0OTc4MSBMMCwzOS4wNTg0NDg5IEMwLDM5LjA1ODQ0ODkgMCwzMi4wMDYwMDQ0IDQuOTkwMjU1MzMsMjkuNDQwOTIxMyBDOC4xNTEwMTU0NiwyNy44MTk3NzA3IDYuOTMzNTkzODUsMjkuMTM4MTczNiAxMC44MTM3OTA4LDI3LjQ3NDcwNjEgQzE0LjY5MDc0NzcsMjUuODE3ODE2OCAxNS42MDg3NTk5LDI1LjIzODQzODIgMTUuNjA4NzU5OSwyNS4yMzg0MzgyIEwxNS42NDQ1NDc2LDIxLjQxNjcwOTMgQzE1LjY0NDU0NzYsMjEuNDE2NzA5MyAxNC4xOTI3MTM4LDIwLjI3MDk2MTQgMTMuNzQzNTI2MSwxNi42NzM5MjQ1IEMxMi44MzIwOTIxLDE2Ljk0NzM2NDUgMTIuNTMyNTg0NSwxNS41NzM2MzU0IDEyLjQ4MDQ5ODQsMTQuNjk3OTg5MiBDMTIuNDMxNjUyMywxMy44NTQ4OTA4IDExLjk1MzE1NjgsMTEuMjE4MTgzIDEzLjA2MzIxNTIsMTEuNDU1ODM1MyBDMTIuODM1MzgxMyw5LjY5NjM5Mzc1IDEyLjY3MjU0NDYsOC4xMDc4Mzk5NCAxMi43NTM5Mzg0LDcuMjY2MzYxNSBDMTMuMDMwNjE4NCw0LjMxMzk0NTk1IDE1Ljc4NDUwNzcsMS4yMjk1NzIyOCAyMC4wMjk0MDU4LDEuMDAzMzU4MzcgQzI1LjAxOTYxMjEsMS4yMjc5NTIyNiAyNi45OTg3ODc0LDQuMzEyMzI1OTIgMjcuMjc1NDE4NCw3LjI2NDc5MDU3IEMyNy4zNTY4MTIyLDguMTA2MjE5OTIgMjcuMTc3NzI2Miw5LjY5NDc3MzczIDI2Ljk0OTg5MjIsMTEuNDUyNTk1MiBDMjguMDU5OTAxNSwxMS4yMTY2MTIxIDI3LjU3ODExNjksMTMuODQ4NDEwNyAyNy41MjYwMzA4LDE0LjY5NDc5ODMgQzI3LjQ3Mzk5MzcsMTUuNTY3MjA0NCAyNy4xNjgwMDYsMTYuOTM3NjkzNSAyNi4yNjMxMDEzLDE2LjY2NDIwNDQgQzI1LjgwNzI4NjIsMjAuMjYxMTkyMiAyNC4zNTU1MDE0LDIxLjQwMDU1ODIgMjQuMzU1NTAxNCwyMS40MDA1NTgyIEwyNC4zOTEyODkyLDI1LjIwMjYwMTQgQzI0LjM5MTI4OTIsMjUuMjAyNjAxNCAyNS4zMDkyNTIzLDI1Ljc0MzAwMTMgMjkuMTg2MzA3NCwyNy4zOTk5Mzk2IEMzMy4wNjY1MDQzLDI5LjA2MDA2ODkgMzEuODQ4OTg0NSwyNy44MTk3NzA3IDM1LjAwOTg0MjksMjkuNDQwOTIxMyBDNDAsMzIuMDA1OTU1MyA0MCwzOS4wNTg0NDg5IDQwLDM5LjA1ODQ0ODkiIGlkPSJwYXRoLTUiPjwvcGF0aD4KICAgIDwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSLlrqHmibnmtYHnqIsiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04NTcuMDAwMDAwLCAtMjIzLjAwMDAwMCkiPgogICAgICAgICAgICA8ZyBpZD0i5oql6ZSA5Y2V6K+m5oOFIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NzAuMDAwMDAwLCA3NS4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJHcm91cC05Ij4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwLjAwMDAwMCwgMTQ3LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8ZyBpZD0iR3JvdXAtMTEtQ29weS0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMzEuMDAwMDAwLCAxLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuMDAwMDAwLCAwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxtYXNrIGlkPSJtYXNrLTMiIGZpbGw9IndoaXRlIj4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIj48L3VzZT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ik1hc2siIHN0cm9rZT0iI0U3RTdFNyIgbWFzaz0idXJsKCNtYXNrLTIpIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9IiNGM0YzRjMiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dXNlIG1hc2s9InVybCgjbWFzay00KSIgeGxpbms6aHJlZj0iI3BhdGgtMSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIGlkPSJQYWdlLTEiIG1hc2s9InVybCgjbWFzay0zKSI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQuMDAwMDAwLCA4LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPG1hc2sgaWQ9Im1hc2stNiIgZmlsbD0id2hpdGUiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDx1c2UgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L21hc2s+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8dXNlIGlkPSJNYXNrIiBzdHJva2U9Im5vbmUiIGZpbGw9IiNFMkUyRTIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgeGxpbms6aHJlZj0iI3BhdGgtNSI+PC91c2U+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="" class="user-img___1I6RD"><div class="approve-content-wrapper___1BESD">
+                    <span><mark class="content-highlight___shgGe ">郭美杰</mark>
+                    <span class=""> 提交送审</span>
+                  </span>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="button-bottom" style="border-top: 1px solid rgba(0, 0, 0, 0.08); ">
+
+                      <el-button plain >打印</el-button>
+
+                    </div>
+                  </el-tab-pane>
+                </el-tabs>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "side-bar",
+      props:{
+        closeSidebar:{
+          type:Function
+        },
+        tabledata1:{
+          type:Object,
+          default:{}
+        },
+      },
+      data(){
+          return{
+            bool2:false,
+            activeName2: 'first'
+          }
+      },
+      methods:{
+        close(){
+          this.bool2=false
+          this.box_hide()
+          // this.$emit('hidePanel')
+          this.closeSidebar()
+        },
+        box_hide(){
+          if(this.bool2==true){
+            this.$refs.mdl.style.right=0
+          }else{
+            this.$refs.mdl.style.right='-100%'
+          }
+        },
+        //内容事件
+        handleClickTab(tab, event) {
+          console.log(tab, event);
+        },
+        handleCommand(command) {
+          this.$message('click on item ' + command);
+        }
+      }
+    }
+</script>
+
+<style scoped>
+
+  #modal{
+    box-shadow:0px 2px 4px 1px #9a9a9a;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    right: 0;
+    transition: all .5s;
+    background: rgba(0,0,0,.2);
+  }
+  #left{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: #fff;
+  }
+  #header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #39accc;
+    border-bottom: 1px solid #9a9a9a;
+    justify-content:space-between;
+  }
+  #header p{
+    color: #fff;
+    float: left;
+    font-size: 18px;
+    height: 70px;
+    line-height: 70px;
+    margin-top:1px;
+    padding-left: 10px;
+  }
+  .btn{
+    margin-right: 15px;
+    color: white;
+    background: #1E90FF;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    float: right;
+    width: 75px;
+    margin-top: 15px;
+    margin-left: 5px;
+    display: inline-block;
+  }
+  #body-content{
+    clear: both;
+  }
+
+
+
+  /*内容*/
+  .right_part_header___y19fn, .right_part_header_draft___fiICU {
+    width: 100%;
+    background-color: #fff;
+    padding: 12px 24px;
+  }
+  .title___3t8dP {
+    width: 100%;
+    white-space: nowrap;
+    padding-right: 70px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .subtitle___-iScM {
+    margin-top: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .template_type___2GSEH {
+    height: 18px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.45);
+  }
+  .bill_id___2og4I, .owner_name___pwKtG {
+    height: 18px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: 16px;
+    color: rgba(0,0,0,.45);
+  }
+  .status___2_bB3 {
+    position: absolute;
+    /*top: 2px;*/
+    margin-top: -15px;
+    right: 25px;
+  }
+  .color_approving___2Zzjy {
+    background-color: #48ade7;
+  }
+  .status_wrapper_point___z3wCd {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+  }
+  .status_wrapper_text___3654i {
+    margin-left: 6px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #9e9e9e;
+  }
+  .tabsConent{
+    /*margin: 5px;*/
+  }
+  .logs-card___3MDK9 {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 2px;
+    background-color: #fbfbfb;
+    margin-bottom: 14px;
+  }
+  .logs-card___3MDK9 .wrapper {
+    padding: 0 20px;
+  }
+  .logs-card___3MDK9 .wrapper .line-1 {
+    margin-bottom: 3px;
+  }
+  .logs-card___3MDK9 .wrapper .line-1 .circle-icon {
+    width: 5px;
+    height: 5px;
+    border-radius: 6px;
+    background-color: #ffae63;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .pl-10 {
+    padding-left: 10px;
+  }
+  .horizontal___2FyAy{ display: flex; }
+  .approve-content-wrapper___RXwWz {
+    font-size: 12px;
+    display: flex;
+  }
+  .date___3PIk0 {
+    color: #9e9e9e;
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  .content-highlight___2yDV4 {
+    background: none;
+    color: #6c6c6c;
+  }
+
+  /*标题*/
+  .form_item_4_readonly_wrapper___2VbXb {
+    padding-bottom: 16px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.45);
+  }
+  .ant-row {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    zoom: 1;
+    display: block;
+  }
+  .form_item__content___2GGuS, .form_item__label___Gd5r6 {
+    height: 100%;
+    /*display: flex;*/
+    display: inline-block;
+  }
+  .form_item__content___2GGuS {
+    color: #6c6c6c;
+  }
+  .label_wrap___3v18Q {
+    width: 100%;
+    overflow-x: hidden;
+    white-space: normal;
+    word-break: break-all;
+  }
+  .trips___1hDiv h3 {
+    font-size: 14px;
+    color: #6c6c6c;
+    margin-bottom: 18px;
+    font-weight: 400;
+  }
+  .trips___1hDiv .repeat{}
+  .trips___1hDiv ul{  }
+  .trips___1hDiv ul li{list-style: none;cursor: pointer; display: flex;   justify-content: space-between;padding: 0 25px;vertical-align: middle; background: #fff;}
+  .trips___1hDiv ul li .card-left-wrapper .title-line-style{display: flex;    padding-top: 12px; }
+  .trips___1hDiv ul li .card-left-wrapper .title-line-style .account-type-wrapper{display: inline-block;margin-top: -2px; color: #32b5c5;text-align: center;padding: 0 8px;height: 20px; border: 1px solid #32b5c5; border-radius: 2px;}
+  .trips___1hDiv ul li .card-left-wrapper .title-line-style .mr-8{margin-right: 8px;}
+  .trips___1hDiv ul li .card-left-wrapper .title-line-style .color-gray-9{color: #6c6c6c}
+  .trips___1hDiv ul li .color-gray-8{color: #9e9e9e;font-size: 12px;}
+  .trips___1hDiv ul li .account-number-style {font-weight: 600;     font-size: 16px;}
+  .trips___1hDiv ul li .account-number-line-style {margin: 25px 0 14px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+  .trips___1hDiv ul li .account-adr-line-style {display: flex;max-width: 550px;    line-height: 20px;}
+
+  .trips___1hDiv ul li .segment-line-vertical {height: 20px;border-right: 1px solid #e9e9e9;margin-right: 10px;padding-right: 10px;}
+  .trips___1hDiv ul li .bank-info-style {color: #9e9e9e;font-size: 12px;}
+  /*右边内容*/
+  .trips___1hDiv ul li .card-right-wrapper{ display: flex; height: 87px; position: absolute;bottom: 30px;right: 40px; }
+  .trips___1hDiv ul li .card-right-wrapper .owner-line{ display: flex; }
+  .trips___1hDiv ul li .owner-text {
+    font-size: 12px;
+    color: rgba(0,0,0,.25);
+    padding-right: 5px;
+  }
+  /*.trips___1hDiv .trip-list h5 {*/
+    /*font-weight: 400;*/
+    /*font-size: 12px;*/
+    /*color: #333;*/
+    /*line-height: 18px;*/
+    /*margin-bottom: 8px;*/
+  /*}*/
+  /*.trips___1hDiv .trip-list .card {*/
+    /*display: flex;*/
+    /*padding: 12px;*/
+    /*border-radius: 2px;*/
+    /*background-color: #f8f9f9;*/
+  /*}*/
+  /*.trips___1hDiv .trip-list .card .icon {*/
+    /*display: inline-block;*/
+    /*width: 26px;*/
+    /*height: 26px;*/
+    /*border-radius: 50%;*/
+    /*margin-right: 10px;*/
+    /*background-color: #48ade7;*/
+  /*}*/
+  /*.trips___1hDiv .trip-list .card .content {*/
+    /*flex: 1;*/
+  /*}*/
+  /*.trips___1hDiv .trip-list .card .city {*/
+    /*font-size: 14px;*/
+    /*font-weight: 500;*/
+    /*color: #3a3f3f;*/
+    /*line-height: 22px;*/
+  /*}*/
+  /*.trips___1hDiv .trip-list .card .detail {*/
+    /*display: block;*/
+    /*font-size: 12px;*/
+    /*line-height: 1.5;*/
+    /*color: #959898;*/
+    /*border-bottom: 6px;*/
+  /*}*/
+
+
+  .spLiuchengTop{
+    padding: 32px 40px 20px;
+  }
+  .user-pic{
+    width: 150px;
+    text-align: center;
+    float: left;
+  }
+  .user-pic img{
+    z-index: 1001;
+  }
+  .spLiuchengTop-zhuGuan{
+    color: #9c9c9c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0;
+    text-align: center;}
+  .spLiuchengBottom{
+    width: 100%;
+    clear: both;
+    padding:40px;
+  }
+  .expense-log{
+    padding-bottom: 20px;
+  }
+  .mark-circle{
+    margin: 14px 0;
+    width: 11px;
+    height: 11px;
+    border-radius: 5px;
+    border: 2px solid #e6e6e6
+  }
+  .label-time{
+    font-size: 12px;
+    width: 35px;
+    margin: 0 12px;
+    color: #9e9e9e;
+  }
+  .vertical{
+    display: flex;
+  }
+  .mt-5 {
+    margin-top: 5px;
+  }
+  .horizontal___11Gko{
+    display: flex;
+  }
+  .horizontal___11Gko img{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
+  .approve-content-wrapper___1BESD{
+    margin-left: 5px;
+    margin-top: 4px;
+    display: flex;
+  }
+  .content-highlight___shgGe {
+    background: none;
+    color: #333;
+  }
+  .horizontal{
+    display: flex;
+  }
+
+  /*滚动条隐藏*/
+  .ekb-tab-content::-webkit-scrollbar{
+    display: none;
+  }
+  /*底部*/
+  .button-bottom{
+    height: 70px;
+    line-height: 70px;
+    padding-left: 10px;
+  }
+   .flow-config-bg {
+    border-bottom: 1px dashed #dcdcdc;
+    height: 1px;
+     position: absolute;
+     top: 50px;
+     margin-left: -137px;
+  }
+</style>

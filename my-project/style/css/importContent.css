@@ -1,0 +1,32 @@
+/*全选*/
+.detailed-all-content-top .quanxuan{
+  top: 0px; }
+.detailed-all-content-bottom .el-checkbox__inner{
+  /*top:-120px;*/
+}
+
+.detailed-all-content-top .el-menu--horizontal>.el-submenu .el-submenu__title{
+  line-height: 1px !important;
+  height: 30px;
+}
+.detailed-all-content-top .el-submenu__title{
+  margin-top: 4px;
+}
+
+
+.receive .el-dialog{ background-color: #fbfbfb}
+.receive .el-dialog__body { padding: 0 !important;margin: 0; }
+
+
+
+/*下拉菜单*/
+.detailed-all-content-top .el-menu--horizontal>.el-submenu .el-submenu__title{ border: none; }
+.el-submenu.is-active .el-submenu__title { border: none; }
+
+/*添加行程*/
+.content2 .el-dialog__body { padding: 0 ;margin: 0; }
+.addTravelContent-content .el-dialog .editTravel{}
+.addTravelContent-content .el-dialog__body{height: 300px;overflow: auto; border-top: 1px solid #dcdcdc; padding: 15px !important;}
+ .detailed-all .detailed-all-content-bottom .el-checkbox+.el-checkbox{margin: 0;padding: 0}
+
+
